@@ -1,0 +1,7 @@
+.popup {
+  width: 450px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  padding: 20px;
+  background-color: #fff; /* Set background color */
+  color: #333; /* Set text color */
+}

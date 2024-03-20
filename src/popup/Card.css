@@ -1,0 +1,18 @@
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .card-description {
+    margin-bottom: 0;
+    color: #666;
+  }
+  
