@@ -15,8 +15,6 @@
 
 body {
   margin: 8px;
-  display: flex;
-  place-items: center;
 }
 
 @media (prefers-color-scheme: light) {

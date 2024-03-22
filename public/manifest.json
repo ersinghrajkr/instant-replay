@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Hello World Extension",
+  "name": "Capture Flow",
   "version": "1.0",
   "action": {
     "default_popup": "index.html",
@@ -10,7 +10,7 @@
       "128": "vite.svg"
     }
   },
-  "permissions": ["storage", "webNavigation", "tabCapture"],
+  "permissions": ["tabCapture", "activeTab", "downloads"],
   "icons": {
     "16": "vite.svg",
     "48": "vite.svg",
