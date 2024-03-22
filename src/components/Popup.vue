@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const capture = () => {
-  console.log("Button clicked!");
   chrome.tabs.captureVisibleTab((dataUrl) => {
-    console.log(dataUrl);
     if (chrome.runtime.lastError) {
       console.error(chrome.runtime.lastError.message);
       return;
