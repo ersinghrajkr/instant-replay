@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import Popup from "./components/Popup.vue";
 </script>
 
 <template>
-  <HelloWorld />
+  <h1>Capture Flow</h1>
+  <Popup />
 </template>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  white-space: nowrap;
+}
+</style>
