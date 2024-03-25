@@ -14,11 +14,16 @@ const capture = () => {
     });
   });
 };
+
+const devTools = () => {
+};
+
 </script>
 
 <template>
   <h1>Capture Flow</h1>
   <button class="capture-btn" @click="capture">Capture</button>
+  <button class="capture-btn" @click="devTools">View DevTool Logs</button>
 </template>
 
 <style scoped>
