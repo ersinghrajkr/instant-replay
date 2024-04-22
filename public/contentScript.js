@@ -1,3 +1,1 @@
-function sampleFun() {
-    console.log("Content js - Content")
-}
+console.log("Content Script");
