@@ -1,8 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Capture Flow",
+  "description": "Capture Flow description",
   "version": "1.0",
   "action": {
+    "default_title": "Capture Flow",
     "default_popup": "index.html",
     "default_icon": {
       "16": "vite.svg",
@@ -10,10 +12,45 @@
       "128": "vite.svg"
     }
   },
-  "permissions": ["tabCapture", "activeTab", "downloads"],
+  "permissions": [
+    "downloads",
+    "tabCapture",
+    "webRequest",
+    "webNavigation",
+    "activeTab",
+    "tabs",
+    "storage",
+    "cookies",
+    "desktopCapture"
+  ],
   "icons": {
     "16": "vite.svg",
     "48": "vite.svg",
     "128": "vite.svg"
-  }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "contentScript.js"
+      ],
+      "all_frames": true,
+      "css": [],
+      "run_at": "document_end"
+    }
+  ],
+  "incognito": "spanning"
 }
