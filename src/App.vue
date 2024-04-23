@@ -65,7 +65,9 @@ const devTools = () => {
   <div class="video-capture-container">
     <button class="btn" @click="startVideo">Record screen (5sec)</button>
   </div>
-  <button class="capture-btn" @click="devTools">View DevTool Logs</button>
+  <div class="video-capture-container">
+    <button class="btn" @click="devTools">View DevTool Logs</button>
+  </div>
 </template>
 
 <style scoped>
