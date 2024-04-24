@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/chrome": "^0.0.263",
+    "jszip": "^3.10.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {
