@@ -139,7 +139,8 @@ const devTools = () => {
 <style scoped>
 h2 {
   white-space: nowrap;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
+  font-size: 22px;
 }
 
 .header-box {
